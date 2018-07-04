@@ -1,0 +1,2 @@
+# microsoftcloud
+Microsoft Cloud Resources
