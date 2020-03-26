@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "vienaks"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "vienaks"
+    spec:
+      containers:
+        - name: "vienaks"
+          image: "vienacr.azurecr.io/vienaks"
+          ports:
+          - containerPort: 3310
